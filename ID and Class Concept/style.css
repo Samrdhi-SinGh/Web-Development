@@ -1,0 +1,27 @@
+#An-id{
+    background-color: #ceb3e7;
+}
+
+/* For the .red, .bg-yellow, and #redd. All have same styling so it will apply on the element as per Priority and Specification.*/
+
+.bg-yellow{
+    background-color: #d7ef78;
+}
+
+.color{
+    color: #41a2fe;
+}
+
+.red{
+    background-color: #f56c6c;
+}
+
+#redd{
+    background-color: #6c659a;
+}
+/* It will be on page to view.*/
+
+#first-id{
+    font-size: 20px;
+}
+

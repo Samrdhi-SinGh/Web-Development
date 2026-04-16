@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table Format</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <table>
+        <caption> Language Course  </caption> <!-- We used <caption> in this for the table caption. -->
+        <br>
+        <thead> <!-- We are using <thead> to store the heading of table. -->
+            <tr>
+                <th colspan="3"> Name </th> <!-- Here, we are using 'colspan' which will merge the given number of Columns and  this data will be the only one written in that space . -->
+                <th> Age </th>
+                <th> Gender </th>
+                <th> Language </th>
+            </tr>
+        </thead>
+
+        <tbody> <!-- We are using <tbody> to contain the body of table. -->
+            <tr> 
+                <td> Abhinav Yadav </td>
+                <td> 23 </td>
+                <td> Male </td>
+                <td> Java </td>
+            </tr>
+            
+            <tr> 
+                <td colspan="2"> Deepak Singh </td> <!-- Here, we are using 'colspan' which will merge the given number of Columns and  this data will be the only one written in that space . -->
+                <td> 22 </td>
+                <td> Male </td>
+                <td> C++ </td>
+            </tr>
+
+            <tr> 
+                <td> Gori Kushwaha </td>
+                <td> 24 </td>
+                <td> Female </td>
+                <td> Java </td>
+            </tr>
+        </tbody>
+
+        <tfoot> <!-- We are using <tfoot> to contain the body of table. -->
+              <tr> 
+                <td rowspan="2"> Priyanshi Sharama </td><!-- Here, we are using 'rowspan' which will merge the given number of Row and  this data will be the only one written in that space . -->
+                <td> 23 </td>
+                <td> Female </td>
+                <td> Python </td>
+            </tr>
+            
+            <tr> 
+                <td> Karan Singh </td>
+                <td> 23 </td>
+                <td> Male </td>
+                <td> C++ </td>
+            </tr>
+        </tfoot>
+
+    </table>
+    
+</body>
+</html>
