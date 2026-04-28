@@ -1,0 +1,112 @@
+<!DOCTYPE HTML>
+<html lang = "en">
+    <head>
+        <meta charset = "UTF-8">
+        <meta name = "viewport" content = "width=device-width, initial-scale = 1.0">
+        <title> Selectors in CSS </title>
+        <!--Internal CSS is used here :- -->
+        <style>
+            /* Element Selector :- */
+            div{
+                color : rgb(209, 32, 62);
+                background-color: pink;
+            }
+
+            /* Class Selector :- */
+            .box{
+                color : red;
+                background-color: yellow;
+            }
+
+            /* ID Selector :- */
+            #Greek{
+                background-color : rgb(6, 53, 5);
+                color : white;
+            }
+
+            /* Child Selector :- */
+            div > p{
+                color: rgb(130, 118, 118);
+                background-color: aqua;
+            }
+
+            /* Descendent Selector :- */
+            div p{
+                color :darkcyan;
+                background-color: darksalmon;
+            }
+
+            /* Universal Selector :- */
+            *{
+                margin : 0px;
+                padding: 0px;
+            }
+
+            /* Pseudo Selector :- */
+
+           a:visited{
+            color : rgb(105, 6, 6); /* It will make the link color change after it's visited.*/
+           }
+
+           a:link{
+            color: green; /* It will show the link as green until it's not visited.*/
+           }
+
+          a:hover{
+            background-color: rgb(137, 4, 84);  /*Background color will change when hovering over the link.*/
+           } 
+
+           a:active{
+            background-color: rgb(192, 123, 58); /* Applies when the element is being clicked/pressed.*/
+           }
+
+           p:first-child{
+            color:rgb(207, 100, 6); /*"If p is the fisrt child of it's parents , apply this." The <p> which will be the first one in the element will only have this property.*/
+            background-color: yellow;
+            }
+
+        </style>
+    </head>
+    <body>
+
+        <!--p:fisrt-child in Pseudo Selector :- -->
+                <article>
+                    <p> I am using fisrt-child of Pseudo code.</p>
+                    <p> And it'll only apply on first-child &lt;p&gt; of the element. Means first child of parents.</p>
+                </article>
+
+        <!--Element Selector-->
+        <div>
+            <h3>I am learning Web - development.</h3>
+        </div>
+
+        <!--Class Selector-->
+        <div class = "box">
+            <h3>It uses class Selector.</h3>
+        </div>
+
+        <!--ID Selector :- -->
+        <span id="Greek">
+            It uses Id Selector.
+        </span>
+
+        <!--Child Selector :- -->
+        <div>
+            <p> I am willing to learn.</p> <!-- It will use descendent as <p> will be anyway inside the <div>-->
+            <!-- first-child of pseudo selector will be applied if present as <p> is the fisrt child.-->
+        </div>
+
+        <!--Descendent Selector :- -->
+        <div>
+            <article>
+                <p>And I will no matter what.</p> <!-- first-child of pseudo selector will be applied if present as <p> is the fisrt child.-->
+            </article>
+        </div>
+
+        <!--Pseudo Selector :- -->
+        <a href="https://www.google.com"> Go to Google</a>
+        <a href="https://www.youtube.com"> Go to Youtube</a>
+
+            
+    </body>
+</html>
