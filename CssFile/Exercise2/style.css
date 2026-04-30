@@ -1,0 +1,13 @@
+/* Using Pseudo Selector's first-child for first paragraph :- */
+
+p:first-child{
+    background-color : yellow;
+    color : red;
+}
+
+/* Using Child Selector for other paragraphs :- */
+
+div > p{
+    background-color : blue;
+    color : white;
+}
