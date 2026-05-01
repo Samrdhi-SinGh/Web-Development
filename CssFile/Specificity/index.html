@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* The Specificity of Class is more than h1 so it will be applied.*/
+        h1{
+            color: red;
+        }
+
+        .box{
+            color: purple;
+        }
+        .box1{
+            color: aqua;
+        }
+    </style>
+</head>
+<body>
+    <h1> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Omnis, sit.</h1>
+    
+    <h1 class="box">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ducimus, in facilis.</h1>
+
+    <h1 class = "box1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore reiciendis ipsum dolores.</h1>
+
+    <h1 class = "box box1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore reiciendis ipsum dolores.</h1>
+
+    <!-- The last class box2 willbe applied as there are classes and CSS tends to apply style according to order when same class or selector.-->
+
+</body>
+</html>
