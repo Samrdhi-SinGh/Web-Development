@@ -13,21 +13,53 @@
         .box{
             color: purple;
         }
+
         .box1{
             color: aqua;
         }
+
+        [date-x ="a"]{
+            color : Green;
+        }
+
+        #Selector{
+            color : pink;
+        }
+
+        *{
+            color: blue;
+        }
+
     </style>
 </head>
 <body>
-    <h1> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Omnis, sit.</h1>
-    
-    <h1 class="box">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ducimus, in facilis.</h1>
 
+    <!-- Specificity :- Inline style > Id Selector > Class Selector > Element or Attribute Selector > Universal Selector -->
+
+    <h1> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Omnis, sit.</h1>
+    <!-- It'll use Element Selector's style. -->
+     
+    <h1 class="box">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ducimus, in facilis.</h1>
+    <!-- It will use Class selector because Class selector's Specificity is more than Element Selector. -->
+    
     <h1 class = "box1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore reiciendis ipsum dolores.</h1>
 
     <h1 class = "box box1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore reiciendis ipsum dolores.</h1>
+    <!-- The last class box2 will be applied as there are classes and CSS tends to apply style according to order when same class or selector. -->
 
-    <!-- The last class box2 willbe applied as there are classes and CSS tends to apply style according to order when same class or selector.-->
+    <h1 id="Selector" class = "box1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti commodi vero magni neque?</h1>
+    <!-- It will use ID selector because Id selector's Specificity is more than Class Selector. -->
+
+
+    <h1 class = "box" date-x="a">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam quas consequatur cumque reiciendis repellendus.</h1>
+    <!-- It will use class selector because class selector's Specificity is more than Attribute Selector. -->
+
+    <h1 style="color: orange;" class = "box1"  > Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur rem quia eos!.</h1>
+    <!-- It will use Inline style because it's specificity is more Class Selector. -->
+
+     <h1 date-x="a">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam quas consequatur cumque reiciendis repellendus.</h1>
+
+    <!-- ALL h1's will use class selector because Attribute's selector's Specificity is more than Universal Selector. -->
 
 </body>
 </html>
