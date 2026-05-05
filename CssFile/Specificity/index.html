@@ -4,12 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    
     <style>
-        /* The Specificity of Class is more than h1 so it will be applied.*/
-        h1{
-            color: red;
-        }
-
+         
         .box{
             color: purple;
         }
@@ -18,11 +15,15 @@
             color: aqua;
         }
 
-        [date-x ="a"]{
+        h1{
+            color: red;
+        }
+
+        [date-x =a]{
             color : Green;
         }
 
-        #Selector{
+        #id{
             color : pink;
         }
 
@@ -32,9 +33,32 @@
 
     </style>
 </head>
+ 
 <body>
+<!--
+    Cascade Algorithm :-
 
-    <!-- Specificity :- Inline style > Id Selector > Class Selector > Element or Attribute Selector > Universal Selector -->
+    Cascade algorithm determines which properties will be applied.
+
+    4 rules:-
+
+    1. Position of orders :- When only same selector are used then the last one will be applied.
+
+    2. Specificity :- Specificity is an algorithm used to determine which CSS selector has the strongest match. 
+
+    Inline style > Id Selector > Class Selector or Attribute Selector Element Selector > Universal Selector.
+
+    Specificity of ,
+    a. Universal Selector: 0
+    b. Element Selector and Pseudo-element : 1
+    c. Class Selector, and Attribute Selector, and Pseudo-class : 10
+    d. ID Selector : 100
+    e. Inline Selector : 1000
+
+    3. Origin :- the order in which CSS appears and where it comes from, whether that is a browser style, CSS from a browser extension, or your authored CSS.
+
+    4. Importance :- Some CSS rules are weighted more heavily than others, especially with the 'important' rule type.
+-->
 
     <h1> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Omnis, sit.</h1>
     <!-- It'll use Element Selector's style. -->
@@ -45,11 +69,10 @@
     <h1 class = "box1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore reiciendis ipsum dolores.</h1>
 
     <h1 class = "box box1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore reiciendis ipsum dolores.</h1>
-    <!-- The last class box2 will be applied as there are classes and CSS tends to apply style according to order when same class or selector. -->
+    <!-- Position of order.-->
 
-    <h1 id="Selector" class = "box1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti commodi vero magni neque?</h1>
+    <h1 id="id" class = "box1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti commodi vero magni neque?</h1>
     <!-- It will use ID selector because Id selector's Specificity is more than Class Selector. -->
-
 
     <h1 class = "box" date-x="a">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam quas consequatur cumque reiciendis repellendus.</h1>
     <!-- It will use class selector because class selector's Specificity is more than Attribute Selector. -->
@@ -57,9 +80,11 @@
     <h1 style="color: orange;" class = "box1"  > Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur rem quia eos!.</h1>
     <!-- It will use Inline style because it's specificity is more Class Selector. -->
 
-     <h1 date-x="a">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam quas consequatur cumque reiciendis repellendus.</h1>
+    <h1 date-x="a">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam quas consequatur cumque reiciendis repellendus.</h1>
+    <!-- ALL h1's will use Attribute selector because Attribute's selector's Specificity is more than Element Selector. -->
 
-    <!-- ALL h1's will use class selector because Attribute's selector's Specificity is more than Universal Selector. -->
+
+    <!-- No selector will let Universal Selector be applied as it has the least specifity.-->
 
 </body>
 </html>
