@@ -31,7 +31,12 @@
             margin: 23px auto; /*The 23px will be applied on top and bottom in margin and auto will be applied in left and right side.*/ 
             height: 50vh;
             /*vh gives the height to the element in any device, any size..*/
+            font-size:18px;
             background-color:cadetblue;
+        }
+
+        .box1 p{
+            font-size: 2em; /* Paragraph will have 36px size font as 2em will be multiplied by the inherited font-size in box1 18px.*/
         }
 
     </style>
@@ -41,13 +46,18 @@
         1. px :- It's a unit 'Pixel'. It has 196 off an inch.
         2. vw :- vw is 'Viewport'. It works according to how much the viewport is.
         3. vh :- vh is 'Viewport Height'.
+        4.em :- em is used to multiple the font size inherited.
     -->
 
     <div class="box">
         This is a box.
     </div>
 
-    <div class="box1">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sint unde, tenetur praesentium sunt, modi aperiam placeat quas dignissimos dolorum reprehenderit voluptas maiores nulla.</div>
+    <div class="box1">
+
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. At quasi hic animi?</p>
+        
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sint unde, tenetur praesentium sunt, modi aperiam placeat quas dignissimos dolorum reprehenderit voluptas maiores nulla.</div>
 
 
 </body>
