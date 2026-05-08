@@ -11,6 +11,10 @@
             padding: 0;
         }
 
+        html{ /* 'html' is the root element which will have this size.*/
+            font-size: 12px;
+        }
+
         .box{
             box-sizing: border-box;
             border: 2px solid black;
@@ -36,7 +40,11 @@
         }
 
         .box1 p{
-            font-size: 2em; /* Paragraph will have 36px size font as 2em will be multiplied by the inherited font-size in box1 18px.*/
+            font-size: 2em; /* Paragraph will have 36px size of font as 2em will be multiplied by the inherited font-size in box1 18px.*/
+        }
+
+        .box1 article{
+            font-size: 2rem; /* Article will have 24px size of font as 2rem will be multiplied by the root element size 12px. */
         }
 
     </style>
@@ -46,7 +54,8 @@
         1. px :- It's a unit 'Pixel'. It has 196 off an inch.
         2. vw :- vw is 'Viewport'. It works according to how much the viewport is.
         3. vh :- vh is 'Viewport Height'.
-        4.em :- em is used to multiple the font size inherited.
+        4. em :- em is used to multiple the font size inherited.
+        5. rem :- It is used to be times of the size of root element.
     -->
 
     <div class="box">
@@ -57,7 +66,10 @@
 
         <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. At quasi hic animi?</p>
         
-    Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium sint expedita aliquam adipisci doloremque ad consequuntur.</div>
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium sint expedita aliquam adipisci doloremque ad consequuntur.
+    
+    <article> Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus, voluptatibus.</article>
+    </div>
 
 </body>
 </html>
