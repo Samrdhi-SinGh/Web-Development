@@ -1,0 +1,52 @@
+<!DOCTYPE HTML>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> CSS Shadow and Outlines </title>
+
+    <!-- Shadows :- In CSS, Shadow are use to give any element a visual shadow.
+             1. box-shadow: h-offset v-offset blur spread color inset;
+
+                It's used to give shadows to box.
+
+                # h-offset and v-offset :- Determines the shadow's,horizontal and vertical position.
+                # blur :- The larger the value, the blurrier the shadow.
+                # spread: EXpands or shrinks the shadow size.
+                # color :- Defines the shadow color.
+                # inset :- Makes the shadow inner.
+
+             2. text-shadow: h-offset v-offset blur color;
+
+                It's used to give shadow to Texts.
+
+             3. outline: width style color;
+
+                'Outline' is different from 'border' because it takes shape of border, and always outside the border, and is not in 'Box model'.
+        -->
+    <style>
+        .box {
+            border: 2px solid black;
+            padding: 45px;
+            box-shadow: 5px 5px 5px 0px green inset;
+            /* It gives shadow to the box. And if we dont write 'inset', it'll be 'outset' by default always.*/
+            outline: 7px solid red;
+        }
+
+        .text-shadow {
+            text-shadow: 5px 5px 5px #b52fb5;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">
+        It's a box with shadows and outlines.
+    </div>
+    <p class="text-shadow">
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusantium, fugit?
+    </p>
+</body>
+
+</html>
