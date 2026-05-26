@@ -1,36 +1,63 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title> CSS Display Properties </title>
+
+    <!-- Properties :-
+        1. display : inline;
+        2. display : inline-block;
+        3. display : none;
+        4. visibility : hidden;
+
+        Flexbox and grid :-
+        5. display : flex;
+        6. display : grid;
+      -->
+
     <style>
-        *{
+        * {
             margin: 0;
             padding: 0;
         }
 
-        .box{
+        .box {
             border: 2px solid black;
-            
+
             /*display: inline ;  It will make the block element work as an inline element.*/
-            display: inline-block ; /* TO apply margin and padding and width. We need to use inline-block or nothing eill happen.*/
+            display: inline-block;
+            /* TO apply margin and padding and width. We need to use inline-block or nothing will happen.*/
             padding: 55px;
             margin: 44px;
             width: 344px;
+            /*display : flex; In this, the boxes will be one after another below.*/
+            justify-content: center;
+            /* Using flex and center, the elements will come in a line, with center.*/
+            display: inline-flex;
+            /* In this, the boxes will not be one after another but beside each other.*/
+            /* display : grid;
+               display : inline-grid;*/
         }
 
+        /* .box1 {
+            /* display :  none; In this property, it is used to remove the whole block or inline element with space too on the page. Means the next element will take place of the space the element used instead. */
+        /* visibility : hidden; In this, the block is removed but the space remains there on the page.
+        } */
     </style>
 </head>
+
 <body>
 
-    <div class = "box">
+    <div class="box box1">
         I made a box.
     </div>
-    
+
     <div class="box"> Box With border.</div>
 
     <span> I am learning it and trying.</span>
-    
+
 </body>
+
 </html>
