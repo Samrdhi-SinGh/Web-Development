@@ -1,0 +1,47 @@
+/* Overflow Properties:-
+
+1. overflow: scroll;
+Used to give scroll-bar to the border horizontally and vertically.
+
+2. overflow: auto;
+Used to give scroll-bar only when overflowed and only to the side where it's overflowing.
+
+3. overflow: hidden;
+Used to hide the scroll-bar even if overflowed.
+
+4. overflow-x 
+Used to give scroll-bar or not as per the box to the x region.
+
+5. overflow-y
+Used to give scroll-bar or not as per the box to the y region.
+
+6. white-space: nowrap;
+Used to make the content only in one line, no second line.
+
+7. text-overflow: ellipsis;
+Used to show only the starting of the content and the rest by dots.
+
+8. overflow: clip;
+Same as 'hidden', just clip disables the programmatic scrolling too.
+
+9. overflow: auto hidden;
+Here, we can give x and y both to overflow together.
+The format is:-
+'overflow: x y'
+ */
+
+.overflow{
+    width:90px;
+    height:130px;
+    border: 2px solid black;
+    /* overflow: scroll; */
+    /* overflow: auto; */
+    /* overflow: hidden; */
+    /* overflow-x: hidden; */
+    /* overflow-y: scroll; */
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    /* overflow: clip; */
+    overflow: auto hidden
+
+}
