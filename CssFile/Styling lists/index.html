@@ -4,40 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Styling List with CSS</title>
-         <!-- Lists have display: list-item always.
-         And each <li> Have a 'marker'  and a 'content' written inside the <li>. And that's all given to list because of list-item.
-         
-        'marker' :- It the pointer in circle , square, or any shape     which representsd the content of list. -->
-
-    <style>
-        /* Styling lists :-
-        1. list-style
-        Used to style marker. There are many styles.
-        In this, there is 'none' which is used to remove the marker.
-        The marker is never inside list-style, so no background color applies on it.
-
-        2. list-style-position 
-        It is used to make the marker's be inside list-style with the help of 'inside'. 
-
-        3. list-style-image:url(---);
-        It is used to apply image in place of marker. 
-
-        4. list-style-type
-        It is used to place an emoji in place of marker.
-
-        5. list-style: disc inside ur();
-        We can do these hree at once. But, in this two will work at once.
-        */
-        .nav ul li{
-            list-style: devanagari; 
-            list-style-type: "😊"; 
-            background-color: rgb(158, 116, 172);
-            list-style-position: inside;
-            border: 2px solid purple;
-            /* list-style-image: url(); */
-            /* list-style: disc inside url(); */
-        } 
-    </style>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <nav class="nav ul li">
