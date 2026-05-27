@@ -35,13 +35,13 @@ The format is:-
     height:130px;
     border: 2px solid black;
     /* overflow: scroll; */
-    /* overflow: auto; */
+    overflow: auto;
     /* overflow: hidden; */
     /* overflow-x: hidden; */
     /* overflow-y: scroll; */
     white-space: nowrap;
     text-overflow: ellipsis;
     /* overflow: clip; */
-    overflow: auto hidden
+    /* overflow: auto hidden */
 
 }
