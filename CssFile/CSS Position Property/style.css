@@ -1,0 +1,100 @@
+/* Positions of box :-
+1. position: static;
+   By default the position of all the boxes are always static.
+   'static' position means the top, bottom, left, right, z-index can't be applied on the box.
+   This position is always default means the boxes will on the same position it was designed to be.
+
+2. z-index
+   z-index is used make a box come in front of another, means one over another.
+   And to apply 'z-index', the position should always be anything than 'static'.
+   'z-index' is never given '0' because it will not move in front of another then.
+   
+3. position: relative;
+   This position is used to give top, bottom, left, right, z-index, anything. 
+   Using this, we can move the box as per the style we want.
+
+4. position: absolute;
+   Using this position, the box will always come infront of the one below it and hide it.
+   The box will be placed towards 'nearest positioned ancestor'. Position should never be 'static'.
+   Now 'nearest positioned ancestors' means the one ancestor above the 'box which has absolute' who should have position [not static though]. The box will move only around that ancestor then. like, top, bottom, left, right, all will be done around the ancestor. 
+   If no ancestor of the box have position then it goes to <body> and if it doesnt have it as well, then it goes to <html> and it is the highest so the box will be placed around it.
+    
+5. position: fixed;
+Using this position, the box will be in it's place fixed even if the page is scrolled. 
+The box will be statically fixed in it's place and never move.
+
+6. position: sticky;
+"We always need to use 'top' to make it work. Always."
+Using this position, the box will be sticked on it's place and the others will move past it beneath it when scrolled. It will be in it's place and act like static when not scrolled and then sticked when scrolled.
+
+7.
+*/
+
+*{
+    margin:0;
+    padding:0;
+}
+
+.box{
+    width: 60vw;
+    height: 30vh;
+    margin: 3px;
+    padding: 3px;
+    border: 2px solid black;
+}
+
+.parent{
+    border: 2px solid green;
+    width: 90vw;
+    height: 90vh;
+    margin: 10px;
+    padding: 10px;
+    /* position: relative; */
+
+    /* Exception :- transform, filter, or perspective properties can also make an element appear as positioned */
+    /* transform: translate(0); This will also position the box to the parent. */
+     
+    /* filter: invert(0);
+    On giving any number other than 0, the colour of box will be changed to  anyother colour and the box will be moved to the parent.
+    And when given 0, it will be in same colour and move to parent. */
+
+    /* perspective: 0em; Makes the box move to the parent. */
+} 
+
+.box1{
+    background-color: red;
+    /* position: absolute; */
+    /* position: fixed;*/
+    /* position: sticky;*/
+    top:10px;
+    left:20px;
+}
+
+.box2{
+    /* position: relative; 
+    top: 20px;
+    left: 34px;*/
+    background-color: orange;
+}
+
+.box3{
+    /* position: relative;
+    z-index: 3; */
+    background-color: yellow;
+}
+
+.box4{
+    background-color: green;
+}
+
+.box5{
+    background-color: skyblue;
+}
+
+.box6{
+    background-color: blue;
+}
+
+.box7{
+    background-color: purple;
+}
