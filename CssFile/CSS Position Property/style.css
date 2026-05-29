@@ -24,7 +24,7 @@ Using this position, the box will be in it's place fixed even if the page is scr
 The box will be statically fixed in it's place and never move.
 
 6. position: sticky;
-"We always need to use 'top' to make it work. Always."
+" We always need to use 'top' to make it work. Always."
 Using this position, the box will be sticked on it's place and the others will move past it beneath it when scrolled. It will be in it's place and act like static when not scrolled and then sticked when scrolled.
 
 7.
