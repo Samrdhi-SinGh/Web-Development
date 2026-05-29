@@ -11,9 +11,9 @@
 
                 It's used to give shadows to box.
 
-                # h-offset and v-offset :- Determines the shadow's,horizontal and vertical position.
+                # h-offset and v-offset :- Determines the shadow's horizontal and vertical position.
                 # blur :- The larger the value, the blurrier the shadow.
-                # spread: EXpands or shrinks the shadow size.
+                # spread: Expands or shrinks the shadow size.
                 # color :- Defines the shadow color.
                 # inset :- Makes the shadow inner.
 
@@ -24,6 +24,10 @@
              3. outline: width style color;
 
                 'Outline' is different from 'border' because it takes shape of border, and always outside the border, and is not in 'Box model'.
+            
+            4. border-radius
+               
+               It's used to curve the border or gave it shape from the corners.
         -->
     <style>
         .box {
@@ -32,6 +36,8 @@
             box-shadow: 5px 5px 5px 0px green inset;
             /* It gives shadow to the box. And if we dont write 'inset', it'll be 'outset' by default always.*/
             outline: 4px solid red;
+            /* border-radius: 22px; */
+            /* outline-offset: 13px; USed to make outline off of the border. */
         }
 
         .text-shadow {
