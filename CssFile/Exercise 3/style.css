@@ -1,0 +1,78 @@
+* {
+    margin: 6px;
+    padding: 0px;
+}
+
+.MainBox {
+    border: 2px solid rgb(246, 240, 240);
+    width: 534px;
+    height: 794px;
+    border-radius: 21px;
+    box-shadow: 0px 0px 5px 0px gray;
+}
+
+img {
+    /* Element Selector*/
+    border-radius: 23px;
+    margin-bottom: 13px;
+}
+
+.Nature {
+    border: 2px solid gray;
+    display: inline-flex;
+    border-radius: 100px;
+    font-size: 24px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    color: #9e9d9d;
+    margin-left: 31px;
+    width: 98px;
+    height: 28.4px;
+    padding: 2px;
+    justify-content: center;
+}
+
+.Lake {
+    border: 2px solid gray;
+    border-radius: 100px;
+    display: inline-flex;
+    font-size: 24px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    color: #9e9d9d;
+    width: 75px;
+    height: 28.4px;
+    padding: 2px;
+    justify-content: center;
+}
+
+h6 {
+    font-size: 43px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 25px;
+}
+
+p {
+    font-size: 24px;
+    font-weight: bold;
+    color: #9e9d9d;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 28px;
+}
+
+.ReadMore {
+    background-color: #E3F0FF;
+    color: #2F8BFF;
+    border-radius: 100px;
+    display: inline-flex;
+    font-size: 19px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    width: 169px;
+    height: 61.4px;
+    padding: 2px;
+    justify-content: center;
+    align-items: center;
+    margin-left: 175px;
+}
+
